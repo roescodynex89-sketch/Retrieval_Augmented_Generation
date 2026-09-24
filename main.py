@@ -75,9 +75,9 @@ collection.add(
 print("\nData stored in Chroma!")
 
 
-# ============================================
+
 # STEP 5 — RETRIEVAL
-# ============================================
+
 
 query = "How does liquidity affect Bitcoin?"
 
