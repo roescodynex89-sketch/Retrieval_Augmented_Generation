@@ -2,11 +2,10 @@ from sentence_transformers import SentenceTransformer
 import chromadb
 
 
-# ============================================
 # STEP 1 — LOAD DOCUMENT
-# ============================================
 
-with open("crypto.txt", "r", encoding="utf-8") as file:
+
+with open("sample.txt", "r", encoding="utf-8") as file:
     text = file.read()
 
 print("Document loaded successfully!")
