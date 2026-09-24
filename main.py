@@ -39,9 +39,9 @@ for i, chunk in enumerate(chunks):
     print(chunk)
 
 
-# ============================================
+
 # STEP 3 — CREATE EMBEDDINGS
-# ============================================
+
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -53,9 +53,9 @@ print("Number of chunks:", len(chunks))
 print("Embedding size:", len(embeddings[0]))
 
 
-# ============================================
+
 # STEP 4 — VECTOR DATABASE
-# ============================================
+
 
 client = chromadb.Client()
 
