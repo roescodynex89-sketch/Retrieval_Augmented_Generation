@@ -2,7 +2,7 @@ from sentence_transformers import SentenceTransformer
 import chromadb
 
 
-# STEP 1 — LOAD DOCUMENT
+# STEP 1 — LOAD DOCUMENT.............
 
 
 with open("sample.txt", "r", encoding="utf-8") as file:
@@ -13,7 +13,7 @@ print(text)
 
 
 
-# STEP 2 — TEXT CHUNKING
+# STEP 2 — TEXT CHUNKING........
 
 
 chunk_size = 100
@@ -40,7 +40,7 @@ for i, chunk in enumerate(chunks):
 
 
 
-# STEP 3 — CREATE EMBEDDINGS
+# STEP 3 — CREATE EMBEDDINGS............
 
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
@@ -54,7 +54,7 @@ print("Embedding size:", len(embeddings[0]))
 
 
 
-# STEP 4 — VECTOR DATABASE
+# STEP 4 — VECTOR DATABASE.............
 
 
 client = chromadb.Client()
@@ -76,8 +76,7 @@ print("\nData stored in Chroma!")
 
 
 
-# STEP 5 — RETRIEVAL
-
+# STEP 5 — RETRIEVAL.................
 
 query = "How does liquidity affect Bitcoin?"
 
