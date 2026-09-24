@@ -12,9 +12,9 @@ print("Document loaded successfully!")
 print(text)
 
 
-# ============================================
+
 # STEP 2 — TEXT CHUNKING
-# ============================================
+
 
 chunk_size = 100
 overlap = 20
