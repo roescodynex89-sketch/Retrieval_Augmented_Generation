@@ -104,28 +104,3 @@ for i, document in enumerate(results["documents"][0]):
 
 
 
-
-# expect  output>>>>
-
-# Document loaded successfully!
-
-# Chunks:
-# Chunk 0:
-# Bitcoin is a decentralized digital asset...
-
-# Embedding created!
-# Number of chunks: ...
-# Embedding size: 384
-
-# Data stored in Chroma!
-
-# User Question:
-# How does liquidity affect Bitcoin?
-
-# Retrieved Chunks:
-# Result 1:
-# ...
-# Result 2:
-# ...
-# Result 3:
-# ...
